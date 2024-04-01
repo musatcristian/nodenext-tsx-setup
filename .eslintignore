@@ -1,0 +1,15 @@
+node_modules
+dist
+
+package*
+.tsconfig*
+
+.vscode
+
+.eslintrc
+.eslintrc.json
+.eslintrc.jsonc
+
+.eslignore
+
+.git

@@ -1,0 +1,25 @@
+{
+  "include": ["src/**/*", "jest.config.ts"],
+  "exclude": ["node_modules/**", "tests/**/*", "__coverage__"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "inlineSources": true,
+    "newLine": "lf",
+    "outDir": "dist",
+    "pretty": true,
+    "rootDir": "./",
+    "sourceMap": true,
+    "lib": ["Decorators", "ESNext"],
+    "module": "NodeNext",
+    "target": "ES2016",
+    "strict": true,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "paths": {
+      "@Utils/*": ["src/utils/*"]
+    }
+  }
+}

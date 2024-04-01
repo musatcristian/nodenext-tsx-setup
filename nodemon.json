@@ -1,0 +1,19 @@
+{
+  "ext": "js, ts, json",
+  "delay": 1000,
+  "ignore": [
+    ".git",
+    "node_modules",
+    "node_modules/**/node_modules",
+    "tests/**/*"
+  ],
+  "restartable": "rs",
+  "verbose": true,
+  "execMap": {
+    "ts": "tsx --inspect-brk --no-cache"
+  },
+  "watch": ["src/**/*"],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ssr-typescript-app",
+  "version": "1.0.0",
+  "description": "SSR",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "debug": "nodemon -r dotenv/config  ./src/server.ts",
+    "dev": "nodemon --delay 2500ms --exec 'tsx --no-cache' ./src/server.ts",
+    "start": "npm run build && node ./dist/src/server.js",
+    "lint::src": "eslint --fix ./src/**.ts",
+    "lint::tests": "eslint --fix ./tests/**.ts",
+    "lint": "eslint --fix ./**/*.ts",
+    "build": "rm -rf ./dist && tsc -p ./tsconfig.json",
+    "prod": "npm run build && npm start",
+    "test": "jest --verbose --watchAll",
+    "test::coverage": "jest --colors --collectCoverage",
+    "test:ci": "jest --ci --watchAll=false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
+    "nodemon": "*",
+    "ts-jest": "*",
+    "tsx": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "dotenv": "*"
+  }
+}

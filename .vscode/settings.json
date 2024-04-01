@@ -1,0 +1,57 @@
+{
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/include",
+    "${workspaceFolder}/src",
+    "${workspaceFolder}/src/util"
+  ],
+  "C_Cpp.default.compilerArgs": ["-Wall", "-Wextra", "-std=c99"],
+  "git.enableCommitSigning": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "eslint.runtime": "node",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "window.zoomLevel": 1,
+  "editor.fontSize": 10,
+  "terminal.integrated.fontSize": 12,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  // "debug.javascript.terminalOptions": {
+  //   "skipFiles": [
+  //     "${workspaceFolder}/node_modules/**/*.js",
+  //     "<node_internals>/**/*.js"
+  //   ]
+  // },
+  // "typescript.tsdk": "node_modules/typescript/lib"
+}
