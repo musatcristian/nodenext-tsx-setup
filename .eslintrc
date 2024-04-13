@@ -1,21 +1,27 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
-    "prettier/prettier": "warn",
+    "@typescript-eslint/comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "@typescript-eslint/no-unused-expressions": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/quotes": "warn",
     "comma-dangle": "off",
-    "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
-    "quotes": "off",
     "no-unused-expressions": "off",
     "no-unused-labels": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/quotes": "warn",
-    "@typescript-eslint/no-unused-expressions": "warn",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "prettier/prettier": "warn",
+    "quotes": "off"
   },
 }
