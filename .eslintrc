@@ -21,7 +21,7 @@
     "no-unused-expressions": "off",
     "no-unused-labels": "off",
     "no-unused-vars": "off",
-    "prettier/prettier": "warn",
+    "prettier/prettier": "off",
     "quotes": "off"
   },
 }

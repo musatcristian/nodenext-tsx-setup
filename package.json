@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -- --inspect=4000 ./src/server.ts",
-    "debug": "node --watch --inspect=4000 --import tsx/esm ./src/server.ts",
+    "dev": "nodemon -- --inspect=9229 ./src/server.ts",
+    "debug": "node --watch --inspect=9229 --import tsx/esm ./src/server.ts",
     "start": "npm run build && node ./dist/src/server.js",
     "lint::src": "eslint --fix ./src/**.ts",
     "lint::tests": "eslint --fix ./__tests__/**.ts",
