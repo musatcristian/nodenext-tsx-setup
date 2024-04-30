@@ -20,6 +20,19 @@
       "internalConsoleOptions": "neverOpen",
     },
     {
+      "name": "Attach Debugger",
+      "type": "node",
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "port": 4000,
+      "restart": true,
+      "continueOnAttach": true,
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
       "name": "Debug Jest Tests",
       "type": "node",
       "request": "launch",

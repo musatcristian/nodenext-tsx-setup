@@ -1,5 +1,5 @@
-import { HELPER } from "@Utils/helper.js";
 import { IncomingMessage, ServerResponse, createServer } from "http";
+import { HELPER } from "./utils/helper.js";
 
 const port = 3000;
 
@@ -27,7 +27,7 @@ const requestHandler = (request: IncomingMessage, response: ServerResponse) => {
           <title>SSR App</title>
       </head>
       <body>
-          <h1>Hello from DUDUDU ${HELPER}</h1>
+          <h1>Hello from bubu ${HELPER}</h1>
       </body>
       </html>
     `;
@@ -41,9 +41,4 @@ const requestHandler = (request: IncomingMessage, response: ServerResponse) => {
 
 const server = createServer(requestHandler);
 
-server.listen(port, () => {
-  //   if (err) {
-  //     return console.error('Error starting server:', err);
-  //   }
-  console.log(`Server is running on http://localhost:${port}`, HELPER);
-});
+server.listen(port, "127.0.0.1");

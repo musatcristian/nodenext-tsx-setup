@@ -1,1 +1,1 @@
-export const HELPER = "nanan";
+export const HELPER = "HELPER";

@@ -1,5 +1,3 @@
-// import { getDirName, getFileName } from "../src/utils";
-
 import { getDirName } from "../src/utils/dirname";
 import { getFileName } from "../src/utils/filename";
 

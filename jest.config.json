@@ -1,0 +1,42 @@
+{
+  "bail": 1,
+  "cacheDirectory": "/tmp/jest_rt",
+  "collectCoverage": false,
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.{ts,tsx}",
+    "!node_modules",
+    "!**/node_modules/**",
+    "!**/*.test*"
+  ],
+  "coverageDirectory": "./__coverage__",
+  "displayName": "SSR Testing Framework",
+  "extensionsToTreatAsEsm": [".ts"],
+  "moduleFileExtensions": ["js", "ts"],
+  "preset": "ts-jest",
+  "prettierPath": "./node_modules/prettier",
+  "rootDir": "./",
+  "roots": ["./__tests__"],
+  "setupFilesAfterEnv": ["<rootDir>/__helpers__/setup-jest.ts"],
+  "testEnvironment": "node",
+  "testMatch": ["<rootDir>/__tests__/**/*.test.{ts,tsx}"],
+  "testPathIgnorePatterns": [
+    "__mocks__/*",
+    "/node_modules/",
+    "/examples/",
+    "/dist/"
+  ],
+  "transform": {
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        "tsconfig": {
+          "esModuleInterop": true,
+          "allowImportingTsExtensions": false,
+          "isolatedModules": true
+        },
+        "compiler": "typescript",
+        "useESM": true
+      }
+    ]
+  }
+}
