@@ -8,9 +8,9 @@
     "dev": "nodemon -- --inspect=9229 ./src/server.ts",
     "debug": "node --watch --inspect=9229 --import tsx/esm ./src/server.ts",
     "start": "npm run build && node ./dist/src/server.js",
-    "lint::src": "eslint --fix ./src/**.ts",
+    "lint::src": "ESLINT_USE_FLAT_CONFIG=true eslint --fix ./src/**.ts",
     "lint::tests": "eslint --fix ./__tests__/**.ts",
-    "lint": "eslint --fix ./**/*.ts",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint --fix ./**/*.ts",
     "build": "rm -rf ./dist && tsc -p ./tsconfig.json",
     "prod": "npm run build && npm start",
     "test": "jest --verbose --watchAll",
@@ -28,10 +28,13 @@
     "eslint": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-prettier": "*",
+    "eslint-plugin-react": "*",
     "nodemon": "*",
     "ts-jest": "*",
     "tsx": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*"
   },
   "dependencies": {
     "dotenv": "*"

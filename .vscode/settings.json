@@ -46,6 +46,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // "debug.javascript.autoAttachFilter": "onlyWithFlag",
   // "debug.javascript.terminalOptions": {
   //   "skipFiles": [
